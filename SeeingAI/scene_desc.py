@@ -5,9 +5,9 @@ import openai
 import os
 
 class DescribeScene:
-    def __init__(self):
+    def __init__(self, key):
         self.model = YOLO('yolov8n.pt')
-        openai.api_key = os.environ['Seeing AI GPT Key']
+        openai.api_key = key
        
     def detect_objects(self, img):
         img = np.array(img)

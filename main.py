@@ -8,7 +8,7 @@ st.title('Seeing AI Prototype :eyes:')
 tab1, tab2 = st.tabs(['Scene Description', 'Currency Recognition'])
 
 with tab1:
-    scene = DescribeScene()
+    scene = DescribeScene(st.secrets['SeeingAI']['GPTKey'])
     buffer = st.camera_input('Take a picture of your surrounding!')
     if buffer:
         img = Image.open(buffer)
