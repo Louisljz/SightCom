@@ -2,7 +2,6 @@ from ultralytics import YOLO
 from ultralytics.yolo.utils.plotting import Annotator
 import numpy as np
 import openai
-import os
 
 class DescribeScene:
     def __init__(self, key):

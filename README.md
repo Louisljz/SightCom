@@ -1,4 +1,4 @@
-# Seeing AI Prototype
+# SightCom
 
 ## Scene Description
 - Object Detection: Ultralytics YOLOv8
